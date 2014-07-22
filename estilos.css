@@ -35,17 +35,22 @@
 }
 .icon-estrella:before {
 	content: "\e600";
+	color: #FFBE2C;
+	margin-right: 0.4em;
+	position: relative;
+	top: 0.1em;
 }
 .icon-f-arriba:before {
 	content: "\f0aa";
 }
 .icon-f-abajo:before {
 	content: "\f0ab";
+	color: #DD4F24;
 }
 .icon-lapiz:before {
 	content: "\e602";
+	margin-right: 0.5em;
 }
-
 a
 {
 	color:#22BCE0;
@@ -120,7 +125,7 @@ header #logo img
 nav
 {
 	background: #80BCA3;
-	padding: 0 0.5em;
+	padding: 0 6em 0 0;
 	position: relative;
 }
 nav ul
@@ -222,6 +227,10 @@ nav ul li a
 	position: absolute;
 	top: 100%;
 	width: 90%;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
