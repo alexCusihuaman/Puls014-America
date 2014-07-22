@@ -115,12 +115,25 @@ header #avatar img
 	border-radius: 50%;
 	width: 55px;
 }
-header #logo img
+header #logo
 {
+	/*-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);*/
 	border-right: 1px solid white;
 	margin-right: 0.5em;
 	padding-right: 0.5em;
+}
+header #logo img
+{
+
 	width: 52px;
+	transition:.5s;
+}
+header #logo img:hover
+{
+	-webkit-transform:rotate(360deg);
 }
 nav
 {
@@ -149,6 +162,11 @@ nav ul #publicar_nav a
 	padding: 0.8em 0.5em;
 	text-decoration: none;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	-webkit-transition:.3s;
+}
+nav ul #publicar_nav a:hover
+{
+	background: #343B54;
 }
 nav ul li
 {
@@ -160,6 +178,11 @@ nav ul li a
 	color: white;
 	display: block;
 	padding: 0.5em 0;
+	-webkit-transition:.3s;
+}
+nav ul li a:hover
+{
+	background: #343B54;
 }
 #contenido
 {
@@ -237,7 +260,44 @@ nav ul li a
 {
 	float: right;
 }
-
+aside
+{
+	display: none;
+}
+/*@media print{
+	body
+	{
+		font-size: 50px;
+	}
+}*/
+@media screen and (min-width:800px){
+	#contenido
+	{
+		overflow: hidden;
+	}
+	#contenido .item
+	{
+		float: left;
+		width: 49%;
+	}
+	#contenido .item:nth-child(odd)
+	{
+		margin-right: 2%;
+	}
+}
+@media screen and (min-width:1000px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 20%;
+	}
+	aside video
+	{
+		width: 100%;
+	}
+}
 
 
 
